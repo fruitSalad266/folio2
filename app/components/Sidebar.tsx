@@ -1,4 +1,6 @@
 import { ChevronRight, ChevronLeft } from "lucide-react"
+import Image from "next/image"
+import Matt from "/pic1.jpg"
 
 interface SidebarProps {
   sidebarCollapsed: boolean;
@@ -96,8 +98,8 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
         <div className="space-y-12">
           <div>
             <h2 className="text-sm font-medium text-gray-300 uppercase tracking-wider mb-4">Picture</h2>
-            <img 
-              src="/pic1.jpg" 
+            <Image 
+              src="/pic1.jpg"
               alt="Picture of Me. I am extremely handsome. Wow!" 
               className="w-80 h-100 object-cover"
             />
