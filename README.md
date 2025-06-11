@@ -8,6 +8,6 @@ This is my second portfolio.
 - etc
 
 ## How to run
-- Don't
-` sudo npm install
-` npm run dev
+- Don't 
+- ` sudo npm install
+- ` npm run dev

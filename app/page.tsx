@@ -7,7 +7,6 @@ import CSProjectsPanel from "./components/Projects"
 import CreativeWork from "./components/CreativeWork"
 import Sidebar from "./components/Sidebar"
 
-
 export default function Portfolio() {
   const [showCSProjects, setShowCSProjects] = useState(false)
   const creativeWorkRef = useRef<HTMLDivElement>(null)
