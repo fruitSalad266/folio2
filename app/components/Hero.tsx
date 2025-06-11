@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect } from "react"
 import { ChevronRight, Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import TiltCard from "./TiltCard"
@@ -19,6 +20,20 @@ export default function Hero({
   setSidebarCollapsed,
   sidebarCollapsed
 }: HeroProps) {
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const sidebar = document.querySelector('.sidebar')
+      const clickedElement = event.target as HTMLElement
+      
+      if (!sidebar?.contains(clickedElement) && !sidebarCollapsed) {
+        setSidebarCollapsed(true)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [sidebarCollapsed, setSidebarCollapsed])
   return (
     <section className={`h-screen flex items-center justify-center 
       px-4 sm:px-6 md:px-8 lg:px-12 
