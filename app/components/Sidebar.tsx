@@ -95,7 +95,7 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
   return (
     <div
       className={`fixed left-0 top-0 h-full bg-black-800/90 backdrop-blur-sm border-r border-gray-700/50 overflow-y-auto z-20 transition-all duration-300 
-        ${sidebarCollapsed ? "w-2 md:w-16" : "w-full md:w-1/3"}`}
+        ${sidebarCollapsed ? "w-2 md:w-16" : "w-full md:w-1/3"} no-scrollbar`}
     >
       {/* Toggle Button */}
       <button

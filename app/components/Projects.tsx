@@ -69,9 +69,13 @@ const renderTechTags = (tech: string[]) => {
 export default function Projects({ showCSProjects, setShowCSProjects }: CSProjectsPanelProps) {
   return (
     <div
-      className={`fixed right-0 top-0 h-full w-[calc(100vw-4rem)] bg-neutral-900/40 backdrop-blur-sm text-white overflow-y-auto transition-transform duration-500 ease-in-out z-20 ${
+      className={`fixed right-0 top-0 h-full w-[calc(100vw-4rem)] bg-neutral-900/40 backdrop-blur-sm text-white overflow-y-auto transition-transform duration-500 ease-in-out z-20 no-scrollbar ${
         showCSProjects ? "translate-x-0" : "translate-x-full"
       }`}
+      style={{
+        scrollbarWidth: 'none', /* Firefox */
+        msOverflowStyle: 'none', /* Internet Explorer 10+ */
+      }}
     >
       <div className="p-8">
         <div className="flex items-center justify-between mb-4">

@@ -35,6 +35,16 @@
   --sidebar-ring: oklch(0.709 0.01 56.259);
 }
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 a {
   border-bottom: 2px dotted;
 }
