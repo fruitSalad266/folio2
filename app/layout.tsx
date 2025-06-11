@@ -4,7 +4,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'MNGUYEN',
-  description: 'Matthew Portfolio'
+  description: 'Matthew Portfolio',
 }
 
 const dm = DM_Sans({
