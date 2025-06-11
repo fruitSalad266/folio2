@@ -1,6 +1,6 @@
 import { ChevronRight, ChevronLeft } from "lucide-react"
 import Image from "next/image"
-import Matt from "/pic1.jpg"
+// import Matt from "/pic1.jpg"
 
 interface SidebarProps {
   sidebarCollapsed: boolean;
