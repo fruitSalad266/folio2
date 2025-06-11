@@ -102,6 +102,8 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
               src="/pic1.jpg"
               alt="Picture of Me. I am extremely handsome. Wow!" 
               className="w-80 h-100 object-cover"
+              width={320}
+              height={400}
             />
           </div>
           {/* About Section */}
@@ -109,13 +111,13 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
             <h2 className="text-sm font-medium text-gray-300 uppercase tracking-wider mb-4">About</h2>
             <div className="space-y-4">
               <p className="text-sm leading-relaxed text-gray-200">
-                Hi! I'm a third-year student at the University of Washington, Seattle, studying both Informatics (Software) and Business (Operations Supply Chain). 
+                Hi! I&apos;m a third-year student at the University of Washington, Seattle, studying both Informatics (Software) and Business (Operations Supply Chain). 
                 I also work at <a href="https://www.washington.edu/research/compliance/" className="text-grey-400 hover:text-white transition-colors" target="_blank">UW Research Compliance</a> as 
                 a data analyst and am the current Director of PR for <a href="https://uwifc.com" target="blank" className="text-grey-400 hover:text-white transition-colors">UW IFC.</a>
               </p>
               <p className="text-sm leading-relaxed text-gray-200">
-                I'm highly experienced in data for business, design, full stack, database, systems architecture, 
-                ML and AI et cetera. I'm also experienced in DJing. </p>
+                I&apos;m highly experienced in data for business, design, full stack, database, systems architecture, 
+                ML and AI et cetera. I&apos;m also experienced in DJing. </p>
               <p className="text-sm leading-relaxed text-gray-200">This summer I will be working at <a href="https://en.wikipedia.org/wiki/Amazon_(company)" target="_blank" className="text-grey-400 hover:text-white transition-colors">Amazon</a> Bellevue</p>
             </div>
           </div>
