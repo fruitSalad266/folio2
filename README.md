@@ -11,3 +11,6 @@ This is my second portfolio.
 - Don't 
 - ` sudo npm install
 - ` npm run dev
+
+# Copyright
+Don't copy any of my work
