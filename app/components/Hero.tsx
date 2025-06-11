@@ -29,11 +29,14 @@ export default function Hero({
           bg-neutral-900/10 backdrop-blur-sm 
           p-6 sm:p-8 md:p-12 rounded-2xl border border-gray-700/50"
       >
+
         <h1 className="text-5xl md:text-6xl md:my-3 tracking-tight text-center text-white font-bold">MATTHEW NGUYEN</h1>
         <p className="text-sm md:text-base text-gray-300 font-light text-center leading-normal">
           Informatics + Business at the <a href="https://uw.edu" target="_blank" className="hover:text-white transition-colors">University of Washington</a>
         </p>
+        
         <p className="text-sm md:text-base text-gray-300 font-light text-center mt-0 leading-normal">Law @ Harvard</p>
+        
         <div className="flex space-x-4 items-center justify-center my-3">
           <a href="https://github.com/fruitsalad266" target="_blank" className="text-gray-400 hover:text-white transition-colors">
             <Github className="w-4 h-4" />
@@ -45,6 +48,7 @@ export default function Hero({
             <Mail className="w-4 h-4" />
           </a>
         </div>
+
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-8 pt-2">
           <button
             onClick={toggleSidebar}
@@ -70,6 +74,7 @@ export default function Hero({
             CS Projects
             <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
+
         </div>
       </TiltCard>
     </section>

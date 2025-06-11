@@ -65,7 +65,7 @@ export default function Portfolio() {
               : "ml-80"
         }`}
       >
-        <div className="min-h-screen">
+        <div className={`min-h-screen transition-colors duration-300 ${!sidebarCollapsed ? 'opacity-30 bg-black/40' : 'opacity-100'}`}>
           <Hero 
             scrollToCreativeWork={scrollToCreativeWork}
             toggleSidebar={toggleSidebar}
