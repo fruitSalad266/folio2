@@ -2,6 +2,7 @@
 
 import TiltCard from "./TiltCard" 
 import Image from "next/image"
+import { Instagram, Globe, Figma } from "lucide-react"
 
 interface CreativeWorkProps {
   creativeWorkRef: React.RefObject<HTMLDivElement | null>
@@ -13,6 +14,9 @@ interface CreativeProject {
   description: string
   images: string[]
   logo: string
+  instagram?: string
+  website?: string
+  figma?: string
 }
 
 const creativeProjects: CreativeProject[] = [
@@ -27,21 +31,25 @@ const creativeProjects: CreativeProject[] = [
       "/creative/sticker.png",
       "/creative/exec.png",
       "/creative/insta.png",
+      "/creative/gogreek.png"
     ],
-    logo: "/creative/logos/ifc.png"
+    logo: "/creative/logos/ifc.png",
+    instagram: "https://instagram.com/uwifc",
+    website: "https://uwifc.com"
   },
   {
     title: "TAEKWONDO",
     subtitle: "HUSKY",
     description:
-      "Motion-responsive digital art piece for gallery exhibition, combining physical sensors with real-time visual feedback. The installation creates an immersive environment that responds to visitor movement and interaction.",
+      "Designed and developed modern rebrand. Grew social media following by 150%. Directed promotional video and drove membership.",
     images: [
       "/creative/htkd1.png",
       "/placeholder.svg?height=600&width=800&text=Sensor+Setup",
       "/placeholder.svg?height=600&width=800&text=Visual+Feedback",
       "/placeholder.svg?height=600&width=800&text=User+Interaction",
     ],
-    logo: "/creative/logos/htkd1.png"
+    logo: "/creative/logos/htkd1.png",
+    instagram: "https://instagram.com/uwhuskytkd",
   },
   {
     title: "Editorial Design",
@@ -100,7 +108,45 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
                     <h4 className="text-2xl font-medium text-white mb-1">{project.subtitle}</h4>
                     <h3 className="text-5xl font-bold mb-2 leading-none text-white">{project.title}</h3>
                   </div>
-                  <p className={`text-1xl text-neutral-300 font-light leading-normal`}>{project.description}</p>
+                  <p className={`text-1xl text-neutral-300 font-light leading-normal mb-6`}>{project.description}</p>
+                  
+                  {/* Links Section */}
+                  <div className={`flex gap-4 ${projectIndex % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
+                    {project.instagram && (
+                      <a 
+                        href={project.instagram} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition-colors"
+                        aria-label="Instagram"
+                      >
+                        <Instagram className="w-7 h-7" />
+                      </a>
+                    )}
+                    {project.website && (
+                      <a 
+                        href={project.website} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition-colors"
+                        aria-label="Website"
+                      >
+                        <Globe className="w-7 h-7" />
+                      </a>
+                    )}
+                    {project.figma && (
+                      <a 
+                        href={project.figma} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white transition-colors"
+                        aria-label="Figma"
+                      >
+                        <Figma className="w-7 h-7" />
+                      </a>
+                    )}
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -109,10 +155,16 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
             <div className="w-1/2">
               {project.images.map((image, imageIndex) => (
                 <div key={imageIndex} className="bg-neutral-800/80 backdrop-blur-sm flex items-center justify-center">
-                  <img
+                  <Image
                     src={image || "/placeholder.svg"}
                     alt={`${project.title} - Image ${imageIndex + 1}`}
                     className="w-full h-full object-contain"
+                    width={800}
+                    height={600}
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                    }}
                   />
                 </div>
               ))}

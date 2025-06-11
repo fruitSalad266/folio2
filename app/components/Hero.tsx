@@ -55,13 +55,13 @@ export default function Hero({
         
         <div className="flex space-x-6 items-center justify-center my-3">
           <a href="https://github.com/fruitsalad266" target="_blank" className="text-gray-400 hover:text-white transition-colors">
-            <Github className="w-4 h-4" />
+            <Github className="w-5 h-5" />
           </a>
           <a href="https://linkedin.com/in/mattcng" target="_blank" className="text-gray-400 hover:text-white transition-colors">
-            <Linkedin className="w-4 h-4" />
+            <Linkedin className="w-5 h-5" />
           </a>
           <a href="mailto:mattcng9@uw.edu" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
-            <Mail className="w-4 h-4" />
+            <Mail className="w-5 h-5" />
           </a>
         </div>
 
