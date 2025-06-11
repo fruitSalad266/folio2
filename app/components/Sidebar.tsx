@@ -110,7 +110,7 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
       <div
         className={`p-8 transition-opacity duration-300 ${sidebarCollapsed ? "opacity-0 pointer-events-none" : "opacity-100"}`}
       >
-        <div className="space-y-12">
+        <div className="space-y-10">
           <div>
             <h2 className="text-4xl font-black uppercase tracking-wider mb-4">Picture</h2>
             <Image 

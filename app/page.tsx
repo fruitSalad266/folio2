@@ -38,7 +38,7 @@ export default function Portfolio() {
   }, [sidebarCollapsed])
 
   return (
-    <div className="min-h-screen bg-neutral-900/100 text-white relative">
+    <div className="min-h-screen bg-neutral-900/100 text-white relative no-scrollbar">
       {/* Background Image */}
       <div 
         className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-50 pointer-events-none z-0"

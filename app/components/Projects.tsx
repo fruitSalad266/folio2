@@ -72,10 +72,6 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
       className={`fixed right-0 top-0 h-full w-[calc(100vw-4rem)] bg-neutral-900/40 backdrop-blur-sm text-white overflow-y-auto transition-transform duration-500 ease-in-out z-20 no-scrollbar ${
         showCSProjects ? "translate-x-0" : "translate-x-full"
       }`}
-      style={{
-        scrollbarWidth: 'none', /* Firefox */
-        msOverflowStyle: 'none', /* Internet Explorer 10+ */
-      }}
     >
       <div className="p-8">
         <div className="flex items-center justify-between mb-4">
@@ -89,13 +85,13 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
             <ChevronLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           </Button>
         </div>
-
-        <div className="flex items-center justify-between my-8">
+        <p className="text-gray-300 mb-4 leading-relaxed">In the process of learning: ADA, Rust, and OCaml</p>
+        <div className="flex items-center justify-between my-4">
           <h2 className="text-4xl font-bold">SKILLS</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl">
-          <TiltCard className="border border-gray-700/50 bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg hover:border-gray-600 transition-colors">
+          <TiltCard className="border border-gray-700/50 bg-white/5 backdrop-blur-sm p-6 rounded-lg hover:border-gray-600 transition-colors">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-xl font-semibold">Languages</h3>
             </div>
@@ -103,7 +99,7 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
               {renderTechTags(['Python', 'JavaScript', 'TypeScript', 'SQL', 'Java', 'C++', 'Bash', 'HTML', 'SQL', 'R', 'JSX', 'SCSS', 'LaTeX', 'Markdown', 'TSX'])}
             </div>
           </TiltCard>
-          <TiltCard className="border border-gray-700/50 bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg hover:border-gray-600 transition-colors">
+          <TiltCard className="border border-gray-700/50 bg-white/5 backdrop-blur-sm p-6 rounded-lg hover:border-gray-600 transition-colors">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-xl font-semibold">Tools</h3>
             </div>
@@ -113,7 +109,7 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
           </TiltCard>
         </div>
 
-        <div className="flex items-center justify-between my-8">
+        <div className="flex items-center justify-between my-6">
           <h2 className="text-4xl font-bold">PROJECTS</h2>
         </div>
         
