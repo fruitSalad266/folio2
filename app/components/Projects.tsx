@@ -67,11 +67,11 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
           <h2 className="text-6xl font-bold">TECHNICAL PROJECTS</h2>
           <Button
             onClick={() => setShowCSProjects(false)}
-            variant="ghost"
+            variant="outline"
             size="sm"
-            className="text-white hover:bg-gray-800"
+            className="group bg-gray-800/50 border-gray-600 text-white hover:bg-gray-700"
           >
-            <ChevronLeft className="w-4 h-4" />
+            <ChevronLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           </Button>
         </div>
 

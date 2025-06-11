@@ -87,12 +87,12 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
           <div className={`flex w-full max-w-[2000px] mx-auto ${projectIndex % 2 === 0 ? "" : "flex-row-reverse"}`}>
             {/* Sticky Description */}
             <div className="w-1/2 h-screen sticky top-0">
-              <div className="flex items-center justify-center h-full p-16">
-                <div className="max-w-lg bg-neutral-800/40 backdrop-blur-md p-8 rounded-1xl">
+              <div className="flex items-center justify-center h-full p-10">
+                <div className="max-w-lg bg-neutral-800/40 backdrop-blur-md p-14 rounded-1xl">
                   <Image 
                     src={project.logo} 
                     alt={`${project.title} Logo`} 
-                    className={`w-48 h-48 object-contain -mb-4 ${projectIndex % 2 === 0 ? 'ml-0' : 'ml-auto'}`}
+                    className={`w-48 h-48 object-contain -my-8 ${projectIndex % 2 === 0 ? 'ml-0' : 'ml-auto'}`}
                     width={192}
                     height={192}
                   />
@@ -109,14 +109,10 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
             <div className="w-1/2">
               {project.images.map((image, imageIndex) => (
                 <div key={imageIndex} className="bg-neutral-800/80 backdrop-blur-sm flex items-center justify-center">
-                  <Image
+                  <img
                     src={image || "/placeholder.svg"}
                     alt={`${project.title} - Image ${imageIndex + 1}`}
                     className="w-full h-full object-contain"
-                    loading="lazy"
-                    decoding="async"
-                    width={1920}
-                    height={1080}
                   />
                 </div>
               ))}

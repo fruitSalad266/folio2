@@ -146,6 +146,53 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
             </div>
           </div>
 
+          {/* Skills & Education Section */}
+          <div>
+            <h2 className="text-4xl font-bold uppercase tracking-wider mb-4">Fast Facts</h2>
+            <div className="space-y-6">
+              {/* Technical Skills */}
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-3">Technical Skills</h3>
+                <div className="grid grid-cols-2 gap-2">
+                  <div>
+                    <h4 className="text-sm font-medium text-gray-300 mb-2">Programming Languages</h4>
+                    <span className="text-xs bg-gray-700/50 px-3 py-1 rounded-full">
+                    Python
+                    </span>
+                    <p className="text-sm text-gray-200">Python, JavaScript, TypeScript, SQL, Java</p>
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-medium text-gray-300 mb-2">Tools & Technologies</h4>
+                    <p className="text-sm text-gray-200">React, Next.js, Tableau, Power BI, Git</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Languages */}
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-3">Languages</h3>
+                <p className="text-sm text-gray-200">English , Vietnamese</p>
+              </div>
+
+              {/* Test Scores */}
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-3">Test Scores</h3>
+                <p className="text-sm text-gray-200">SAT: 1590</p>
+              </div>
+
+              {/* Relevant Coursework */}
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-3">Relevant Coursework</h3>
+                <ul className="list-disc list-inside text-sm text-gray-200 space-y-1">
+                  <li>Data Structures & Algorithms</li>
+                  <li>Database Systems</li>
+                  <li>Machine Learning</li>
+                  <li>Software Engineering</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* Contact */}
           <div>
             <h2 className="text-4xl font-bold uppercase tracking-wider mb-4">Contact</h2>
@@ -154,8 +201,10 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
 
           <div>
             <h2 className="text-4xl font-bold uppercase tracking-wider mb-4">Footer</h2>
-            <p className="text-sm leading-relaxed text-gray-200">&copy; 2025 Matthew Nguyen</p>
+            
             <p className="text-sm leading-relaxed text-gray-200">Github Repo: <a href="https://github.com/fruitsalad266/folio2" className="text-grey-400 hover:text-white transition-colors">Link</a></p>
+            <p className="text-sm leading-relaxed text-gray-200">Powered by <a href="https://nextjs.org" className="text-grey-400 hover:text-white transition-colors">Next.js</a></p>
+            <p className="text-sm leading-relaxed text-gray-200">&copy; 2025 Matthew Nguyen</p>          
           </div>
         </div>
       </div>

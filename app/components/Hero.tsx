@@ -38,7 +38,7 @@ export default function Hero({
     <section className={`h-screen flex items-center justify-center 
       px-4 sm:px-6 md:px-8 lg:px-12 
       transition-opacity duration-250 
-      ${!sidebarCollapsed ? 'opacity-0 md:opacity-70' : 'opacity-100'}`}>
+      ${!sidebarCollapsed ? 'opacity-0 md:opacity-90' : 'opacity-100'}`}>
       <TiltCard 
         className="w-full max-w-2xl text-center space-y-3 sm:space-y-4 
           bg-neutral-900/10 backdrop-blur-sm 
@@ -47,12 +47,13 @@ export default function Hero({
 
         <h1 className="text-5xl md:text-6xl md:my-3 tracking-tight text-center text-white font-bold">MATTHEW NGUYEN</h1>
         <p className="text-sm md:text-base text-gray-300 font-light text-center leading-normal">
-          Informatics + Business at the <a href="https://uw.edu" target="_blank" className="hover:text-white transition-colors">University of Washington</a>
+          <a href="https://ischool.uw.edu" target="_blank" className="hover:text-white transition-colors"> Informatics</a> + Business 
+          at the <a href="https://uw.edu" target="_blank" className="hover:text-white transition-colors">University of Washington</a>
         </p>
         
         <p className="text-sm md:text-base text-gray-300 font-light text-center mt-0 leading-normal">Law @ Harvard</p>
         
-        <div className="flex space-x-4 items-center justify-center my-3">
+        <div className="flex space-x-6 items-center justify-center my-3">
           <a href="https://github.com/fruitsalad266" target="_blank" className="text-gray-400 hover:text-white transition-colors">
             <Github className="w-4 h-4" />
           </a>
@@ -75,7 +76,7 @@ export default function Hero({
             onClick={scrollToCreativeWork}
             className="text-sm text-gray-300 hover:text-white cursor-pointer transition-colors border-b border-gray-600 pb-1"
           >
-            Creative Work
+            Design Work
           </button>
           <Button 
             onClick={() => {
@@ -86,7 +87,7 @@ export default function Hero({
             size="sm" 
             className="group bg-gray-800/50 border-gray-600 text-white hover:bg-gray-700"
           >
-            CS Projects
+            Technicals
             <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
 
