@@ -1,14 +1,12 @@
 "use client"
 
 import { useState, useRef, useEffect } from "react"
-import { ChevronRight, ChevronLeft, Github, Linkedin, Mail, ExternalLink } from "lucide-react"
 
 import Hero from "./components/Hero"
 import CSProjectsPanel from "./components/Projects"
 import CreativeWork from "./components/CreativeWork"
 import Sidebar from "./components/Sidebar"
 
-import TestFloat from "./components/TestFloat"
 
 export default function Portfolio() {
   const [showCSProjects, setShowCSProjects] = useState(false)
@@ -74,6 +72,7 @@ export default function Portfolio() {
             toggleSidebar={toggleSidebar}
             setShowCSProjects={setShowCSProjects}
             setSidebarCollapsed={setSidebarCollapsed}
+            sidebarCollapsed={sidebarCollapsed}
           />
 
           <CreativeWork creativeWorkRef={creativeWorkRef} />

@@ -9,3 +9,5 @@ This is my second portfolio.
 
 ## How to run
 - Don't
+` sudo npm install
+` npm run dev

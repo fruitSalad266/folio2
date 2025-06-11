@@ -72,8 +72,8 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
   return (
     <section ref={creativeWorkRef} className="min-h-screen">
       <div className="text-center py-16">
-        <div className="bg-neutral-800/80 backdrop-blur-sm p-8 rounded-1xl border border-neutral-700/50 inline-block">
-          <h2 className="text-3xl font-black mb-0 text-white">DESIGN WORK</h2>
+        <div className="bg-black-800/80 backdrop-blur-sm p-8 m-3 rounded-2xl border border-gray-700/50 inline-block">
+          <h2 className="text-6xl font-black mb-0 text-white">DESIGN WORK</h2>
         </div>
       </div>
 

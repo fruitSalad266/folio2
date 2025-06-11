@@ -79,12 +79,13 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
 
   return (
     <div
-      className={`fixed left-0 top-0 h-full bg-black-800/90 backdrop-blur-sm border-r border-gray-700/50 overflow-y-auto z-20 transition-all duration-300 ${sidebarCollapsed ? "w-16" : "w-85"}`}
+      className={`fixed left-0 top-0 h-full bg-black-800/90 backdrop-blur-sm border-r border-gray-700/50 overflow-y-auto z-20 transition-all duration-300 
+        ${sidebarCollapsed ? "w-2 md:w-16" : "w-full md:w-1/3 lg:w-1/4"}`}
     >
       {/* Toggle Button */}
       <button
         onClick={toggleSidebar}
-        className="absolute top-4 right-4 p-2 hover:bg-gray-700/50 rounded-md cursor-pointer transition-colors z-20"
+        className="absolute top-4 right-4 p-2 hover:bg-gray-700/50 rounded-md cursor-pointer transition-colors z-20 border border-gray-700/80"
       >
         {sidebarCollapsed ? <ChevronRight className="w-4 h-4" /> : <ChevronLeft className="w-4 h-4" />}
       </button>
