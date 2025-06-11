@@ -123,7 +123,7 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
           </div>
           {/* About Section */}
           <div>
-            <h2 className="text-4xl font-bold uppercase tracking-wider mb-4">About</h2>
+            <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-wider mb-4">About</h2>
             <div className="space-y-4">
               <p className="text-sm leading-relaxed text-gray-200">
                 Hi! I&apos;m a third-year student at the University of Washington, Seattle, studying both Informatics (Software) and Business (Operations Supply Chain). 
@@ -161,11 +161,11 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
                         {lang}
                       </span>
                     ))}
+                    <h3 className="text-xs font-normal text-gray-300 mb-2">See Technicals for more</h3>
                   </div>
                   <div>
                     <h4 className="text-sm font-medium text-gray-300 mb-2">Tools Frameworks etc</h4>
-                    {['Git', 'Pandas', 'Seaborn', 'plotly', 'scikit-learn', 'React', 'FastAPI', 'Next.JS', 'Node.JS', 
-                    'PyTorch', 'Jupyter', 'Agile framework', 'QuantConnect', 'MySQL', 'SQLite', 'HuggingFace', 'Vite', 'GNU', 'Tailwind', 'Bootstrap'].map((lang, index) => (
+                    {['Git', 'Pandas', 'Seaborn', 'plotly', 'scikit-learn', 'React', 'FastAPI', 'Next.JS', 'Node.JS'].map((lang, index) => (
                       <span key={index} className="text-xs bg-gray-700/70 px-3 py-1 rounded-full mr-2 mb-2 inline-block">
                         {lang}
                       </span>

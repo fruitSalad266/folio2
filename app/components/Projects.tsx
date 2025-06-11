@@ -55,6 +55,17 @@ const projects: Project[] = [
   }
 ]
 
+const renderTechTags = (tech: string[]) => {
+  return tech.map((item, index) => (
+    <span
+      key={index}
+      className="px-3 py-1 text-xs bg-gray-700/50 text-gray-300 mr-2 mb-2 inline-block rounded-full border border-gray-600/50"
+    >
+      {item}
+    </span>
+  ))
+}
+
 export default function Projects({ showCSProjects, setShowCSProjects }: CSProjectsPanelProps) {
   return (
     <div
@@ -63,8 +74,8 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
       }`}
     >
       <div className="p-8">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-6xl font-bold">TECHNICAL PROJECTS</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-6xl font-bold md:text-8xl">TECHNICALS</h2>
           <Button
             onClick={() => setShowCSProjects(false)}
             variant="outline"
@@ -75,6 +86,33 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
           </Button>
         </div>
 
+        <div className="flex items-center justify-between my-8">
+          <h2 className="text-4xl font-bold">SKILLS</h2>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl">
+          <TiltCard className="border border-gray-700/50 bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg hover:border-gray-600 transition-colors">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xl font-semibold">Languages</h3>
+            </div>
+            <div>
+              {renderTechTags(['Python', 'JavaScript', 'TypeScript', 'SQL', 'Java', 'C++', 'Bash', 'HTML', 'SQL', 'R', 'JSX', 'SCSS', 'LaTeX', 'Markdown', 'TSX'])}
+            </div>
+          </TiltCard>
+          <TiltCard className="border border-gray-700/50 bg-gray-800/50 backdrop-blur-sm p-6 rounded-lg hover:border-gray-600 transition-colors">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-xl font-semibold">Tools</h3>
+            </div>
+            <div>
+              {renderTechTags(['Git', 'Pandas', 'Seaborn', 'plotly', 'scikit-learn', 'React', 'FastAPI', 'Next.JS', 'Node.JS', 'PyTorch', 'Jupyter', 'Agile framework', 'QuantConnect', 'MySQL', 'SQLite', 'HuggingFace', 'Vite', 'GNU', 'Tailwind', 'Bootstrap'])}
+            </div>
+          </TiltCard>
+        </div>
+
+        <div className="flex items-center justify-between my-8">
+          <h2 className="text-4xl font-bold">PROJECTS</h2>
+        </div>
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl">
           {projects.map((project, index) => (
             <TiltCard 
@@ -91,11 +129,7 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2">
-                {project.tech.map((tech, techIndex) => (
-                  <span key={techIndex} className="text-xs bg-gray-700/50 px-3 py-1 rounded-full">
-                    {tech}
-                  </span>
-                ))}
+                {renderTechTags(project.tech)}
               </div>
             </TiltCard>
           ))}
