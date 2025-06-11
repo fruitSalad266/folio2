@@ -17,12 +17,13 @@ const creativeProjects: CreativeProject[] = [
     title: "INTERFRATERNITY COUNCIL",
     subtitle: "UNIVERSITY OF WASHINGTON",
     description:
-      "Complete visual identity for a sustainable fashion brand, including logo design, color palette, typography, and brand guidelines. This comprehensive system ensures consistent brand expression across all touchpoints.",
+      "Developed + promoted coherent IFC brand representing 25 fraternities at the University of Washington.",
     images: [
       "/creative/fpr1.png",
       "/creative/gogreek.png",
       "/creative/sticker.png",
       "/creative/exec.png",
+      "/creative/insta.png",
     ],
     logo: "/creative/logos/ifc.png"
   },
@@ -32,7 +33,7 @@ const creativeProjects: CreativeProject[] = [
     description:
       "Motion-responsive digital art piece for gallery exhibition, combining physical sensors with real-time visual feedback. The installation creates an immersive environment that responds to visitor movement and interaction.",
     images: [
-      "/placeholder.svg?height=600&width=800&text=Installation+View",
+      "/creative/htkd1.png",
       "/placeholder.svg?height=600&width=800&text=Sensor+Setup",
       "/placeholder.svg?height=600&width=800&text=Visual+Feedback",
       "/placeholder.svg?height=600&width=800&text=User+Interaction",
@@ -88,13 +89,13 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
                   <img 
                     src={project.logo} 
                     alt={`${project.title} Logo`} 
-                    className={`w-48 h-48 object-contain mb-1 ${projectIndex % 2 === 0 ? 'ml-0' : 'ml-auto'}`}
+                    className={`w-48 h-48 object-contain -mb-4 ${projectIndex % 2 === 0 ? 'ml-0' : 'ml-auto'}`}
                   />
                   <div className={`${projectIndex % 2 === 0 ? 'text-left' : 'text-right'}`}>
                     <h4 className="text-2xl font-medium text-white mb-1">{project.subtitle}</h4>
-                    <h3 className="text-5xl font-bold mb-2 leading-tight text-white">{project.title}</h3>
+                    <h3 className="text-5xl font-bold mb-2 leading-none text-white">{project.title}</h3>
                   </div>
-                  <p className={`text-1xl text-neutral-300 font-medium leading-relaxed`}>{project.description}</p>
+                  <p className={`text-1xl text-neutral-300 font-light leading-normal`}>{project.description}</p>
                 </div>
               </div>
             </div>

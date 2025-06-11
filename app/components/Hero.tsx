@@ -21,8 +21,8 @@ export default function Hero({
     <section className="h-screen flex items-center justify-center px-12">
       <div className="max-w-2xl text-center space-y-4 bg-neutral-900/10 backdrop-blur-sm p-12 rounded-2xl border border-gray-700/50">
         <h1 className="text-6xl tracking-tight text-center text-white font-bold">MATTHEW NGUYEN</h1>
-        <p className="text-l text-gray-300 font-light text-center">Informatics + Business at the <a href="https://uw.edu" target="_blank" className="hover:text-white transition-colors">University of Washington</a></p>
-        <p className="text-l text-gray-300 font-light text-center mt-0">Law @ Harvard</p>
+        <p className="text-l text-gray-300 font-light text-center leading-none">Informatics + Business at the <a href="https://uw.edu" target="_blank" className="hover:text-white transition-colors">University of Washington</a></p>
+        <p className="text-l text-gray-300 font-light text-center mt-0 leading-tight">Law @ Harvard</p>
         <div className="flex space-x-4 items-center justify-center">
           <a href="https://github.com/fruitsalad266" target="_blank" className="text-gray-400 hover:text-white transition-colors">
             <Github className="w-4 h-4" />

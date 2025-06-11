@@ -10,11 +10,12 @@ interface ExperienceItem {
   company: string;
   period: string;
   description: string;
+  roles?: ExperienceItem[]; // For multiple roles at the same company
 }
 
 const experiences: ExperienceItem[] = [
   {
-    title: "Systems and Data Analyst",
+    title: "Systems/Data Analyst",
     company: "UW Research Compliance",
     period: "2023 - Present",
     description: "I used Tableau, Power BI and Excel to generate useful visualizations and projections of workload. I also automated various processes with Python and pulled data from a central SQL server."
@@ -35,11 +36,47 @@ const experiences: ExperienceItem[] = [
     title: "FDSE",
     company: "Palantir",
     period: "2023 - 2025",
-    description: "Worked with clients to custom integrate Foundry products"
+    description: "Worked with clients to custom integrate Foundry products",
+    roles: [
+      {
+        title: "FDSE",
+        company: "Palantir",
+        period: "2023 - 2024",
+        description: "Developed and maintained core platform features"
+      },
+      {
+        title: "Project Manager",
+        company: "Palantir",
+        period: "2024 - 2025",
+        description: "Foundry"
+      }
+    ]
   }
 ];
 
 export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProps) {
+  const renderExperience = (exp: ExperienceItem, index: number) => {
+    return (
+      <div key={index} className="mb-6 last:mb-0">
+        <h3 className="font-medium text-sm text-white">{exp.title}</h3>
+        <p className="text-xs text-gray-400 mb-2">{exp.company} • {exp.period}</p>
+        <p className="text-xs text-gray-300 leading-relaxed">{exp.description}</p>
+        
+        {exp.roles && (
+          <div className="mt-3 ml-4 border-l border-gray-700/50 pl-4 space-y-4">
+            {exp.roles.map((role, roleIndex) => (
+              <div key={roleIndex}>
+                <h4 className="font-medium text-xs text-white">{role.title}</h4>
+                <p className="text-xs text-gray-400 mb-1">{role.period}</p>
+                <p className="text-xs text-gray-300 leading-relaxed">{role.description}</p>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  };
+
   return (
     <div
       className={`fixed left-0 top-0 h-full bg-black-800/90 backdrop-blur-sm border-r border-gray-700/50 overflow-y-auto z-20 transition-all duration-300 ${sidebarCollapsed ? "w-16" : "w-85"}`}
@@ -84,13 +121,7 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
           <div>
             <h2 className="text-sm font-medium text-gray-300 uppercase tracking-wider mb-4">Experience</h2>
             <div className="space-y-6">
-              {experiences.map((exp, index) => (
-                <div key={index}>
-                  <h3 className="font-medium text-sm text-white">{exp.title}</h3>
-                  <p className="text-xs text-gray-400 mb-2">{exp.company} • {exp.period}</p>
-                  <p className="text-xs text-gray-300 leading-relaxed">{exp.description}</p>
-                </div>
-              ))}
+              {experiences.map((exp, index) => renderExperience(exp, index))}
             </div>
           </div>
 
