@@ -1,6 +1,5 @@
 import { ChevronRight, ChevronLeft } from "lucide-react"
 import Image from "next/image"
-// import Matt from "/pic1.jpg"
 
 interface SidebarProps {
   sidebarCollapsed: boolean;
@@ -115,7 +114,7 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
           <div>
             <h2 className="text-4xl font-black uppercase tracking-wider mb-4">Picture</h2>
             <Image 
-              src="/pic1.jpg"
+              src="/pic1.JPG"
               alt="Picture of Me. I am extremely handsome. Wow!" 
               className="w-80 h-100 object-cover"
               width={640}
@@ -150,34 +149,49 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
           <div>
             <h2 className="text-4xl font-bold uppercase tracking-wider mb-4">Fast Facts</h2>
             <div className="space-y-6">
+
               {/* Technical Skills */}
               <div>
                 <h3 className="text-xl font-semibold text-white mb-3">Technical Skills</h3>
                 <div className="grid grid-cols-2 gap-2">
                   <div>
-                    <h4 className="text-sm font-medium text-gray-300 mb-2">Programming Languages</h4>
-                    <span className="text-xs bg-gray-700/50 px-3 py-1 rounded-full">
-                    Python
-                    </span>
-                    <p className="text-sm text-gray-200">Python, JavaScript, TypeScript, SQL, Java</p>
+                    <h4 className="text-sm font-medium text-gray-300 mb-2">Computer Languages</h4>
+                    {['Python', 'JavaScript', 'TypeScript', 'SQL', 'Java', 'C++', 'Bash', 'HTML', 'SQL', 'R', 'JSX', 'SCSS', 'LaTeX', 'Markdown', 'TSX'].map((lang, index) => (
+                      <span key={index} className="text-xs bg-gray-700/70 px-3 py-1 rounded-full mr-2 mb-2 inline-block">
+                        {lang}
+                      </span>
+                    ))}
                   </div>
                   <div>
-                    <h4 className="text-sm font-medium text-gray-300 mb-2">Tools & Technologies</h4>
-                    <p className="text-sm text-gray-200">React, Next.js, Tableau, Power BI, Git</p>
+                    <h4 className="text-sm font-medium text-gray-300 mb-2">Tools Frameworks etc</h4>
+                    {['Git', 'Pandas', 'Seaborn', 'plotly', 'scikit-learn', 'React', 'FastAPI', 'Next.JS', 'Node.JS', 
+                    'PyTorch', 'Jupyter', 'Agile framework', 'QuantConnect', 'MySQL', 'SQLite', 'HuggingFace', 'Vite', 'GNU', 'Tailwind', 'Bootstrap'].map((lang, index) => (
+                      <span key={index} className="text-xs bg-gray-700/70 px-3 py-1 rounded-full mr-2 mb-2 inline-block">
+                        {lang}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
 
               {/* Languages */}
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">Languages</h3>
-                <p className="text-sm text-gray-200">English , Vietnamese</p>
+                <h3 className="text-xl font-semibold text-white mb-3">Human Languages</h3>
+                <p className="text-sm text-gray-200">English , Vietnamese, Mandarin Chinese, Spanish</p>
               </div>
 
               {/* Test Scores */}
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">Test Scores</h3>
-                <p className="text-sm text-gray-200">SAT: 1590</p>
+                <div className="grid grid-cols-2 gap-2">
+                  <div>
+                    <h3 className="text-xl font-semibold text-white mb-3">SAT</h3>
+                    <p className="text-sm text-gray-200">1590</p>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-white mb-3">LSAT</h3>
+                    <p className="text-sm text-gray-200">170</p>
+                  </div>
+                </div>
               </div>
 
               {/* Relevant Coursework */}
