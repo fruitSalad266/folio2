@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useRef } from "react"
 import { ChevronRight, Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import TiltCard from "./TiltCard"
@@ -11,6 +11,7 @@ interface HeroProps {
   setShowCSProjects: (show: boolean) => void
   setSidebarCollapsed: (collapsed: boolean) => void
   sidebarCollapsed: boolean
+  sidebarRef: React.RefObject<HTMLDivElement | null>
 }
 
 export default function Hero({ 
@@ -18,22 +19,25 @@ export default function Hero({
   toggleSidebar, 
   setShowCSProjects, 
   setSidebarCollapsed,
-  sidebarCollapsed
+  sidebarCollapsed,
+  sidebarRef
 }: HeroProps) {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      const sidebar = document.querySelector('.sidebar')
-      const clickedElement = event.target as HTMLElement
+      if (!sidebarRef.current) return;
+      const clickedElement = event.target as Node;
       
-      if (!sidebar?.contains(clickedElement) && !sidebarCollapsed) {
+      // Only collapse if clicking outside the sidebar and sidebar is not collapsed
+      if (!sidebarRef.current.contains(clickedElement) && !sidebarCollapsed) {
         setSidebarCollapsed(true)
       }
     }
 
     document.addEventListener('mousedown', handleClickOutside)
     return () => document.removeEventListener('mousedown', handleClickOutside)
-  }, [sidebarCollapsed, setSidebarCollapsed])
+  }, [sidebarCollapsed, setSidebarCollapsed, sidebarRef])
+
   return (
     <section className={`h-screen flex items-center justify-center 
       px-4 sm:px-6 md:px-8 lg:px-12 

@@ -10,6 +10,7 @@ import Sidebar from "./components/Sidebar"
 export default function Portfolio() {
   const [showCSProjects, setShowCSProjects] = useState(false)
   const creativeWorkRef = useRef<HTMLDivElement>(null)
+  const sidebarRef = useRef<HTMLDivElement>(null)
   const [sidebarCollapsed, setSidebarCollapsed] = useState(true)
 
   const scrollToCreativeWork = () => {
@@ -49,6 +50,7 @@ export default function Portfolio() {
 
       {/* Left Sidebar */}
       <Sidebar 
+        ref={sidebarRef}
         sidebarCollapsed={sidebarCollapsed}
         toggleSidebar={toggleSidebar}
       />
@@ -72,6 +74,7 @@ export default function Portfolio() {
             setShowCSProjects={setShowCSProjects}
             setSidebarCollapsed={setSidebarCollapsed}
             sidebarCollapsed={sidebarCollapsed}
+            sidebarRef={sidebarRef}
           />
 
           <CreativeWork creativeWorkRef={creativeWorkRef} />

@@ -1,5 +1,6 @@
 import { ChevronRight, ChevronLeft } from "lucide-react"
 import Image from "next/image"
+import { forwardRef } from "react"
 
 interface SidebarProps {
   sidebarCollapsed: boolean;
@@ -69,7 +70,7 @@ const experiences: ExperienceItem[] = [
   }
 ];
 
-export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProps) {
+const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, toggleSidebar }, ref) => {
   const renderExperience = (exp: ExperienceItem, index: number) => {
     return (
       <div key={index} className="mb-6 last:mb-0">
@@ -94,7 +95,8 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
 
   return (
     <div
-      className={`fixed left-0 top-0 h-full bg-black-800/90 backdrop-blur-sm border-r border-gray-700/50 overflow-y-auto z-20 transition-all duration-300 
+      ref={ref}
+      className={`sidebar fixed left-0 top-0 h-full bg-black-800/90 backdrop-blur-sm border-r border-gray-700/50 overflow-y-auto z-20 transition-all duration-300 
         ${sidebarCollapsed ? "w-2 md:w-16" : "w-full md:w-1/3"} no-scrollbar`}
     >
       {/* Toggle Button */}
@@ -224,4 +226,8 @@ export default function Sidebar({ sidebarCollapsed, toggleSidebar }: SidebarProp
       </div>
     </div>
   )
-} 
+})
+
+Sidebar.displayName = 'Sidebar'
+
+export default Sidebar 
