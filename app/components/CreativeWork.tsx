@@ -26,12 +26,12 @@ const creativeProjects: CreativeProject[] = [
     description:
       "Developed + promoted coherent IFC brand representing 25 fraternities at the University of Washington.",
     images: [
-      "/creative/fpr1.png",
-      "/creative/gogreek.png",
-      "/creative/sticker.png",
-      "/creative/exec.png",
-      "/creative/insta.png",
-      "/creative/gogreek.png"
+      "/creative/ifc/fpr1.png",
+      "/creative/ifc/gogreek.png",
+      "/creative/ifc/sticker.png",
+      "/creative/ifc/exec.png",
+      "/creative/ifc/insta.png",
+      "/creative/ifc/gogreek.png"
     ],
     logo: "/creative/logos/ifc.png",
     instagram: "https://instagram.com/uwifc",
@@ -43,7 +43,7 @@ const creativeProjects: CreativeProject[] = [
     description:
       "Designed and developed modern rebrand. Grew social media following by 150%. Directed promotional video and drove membership.",
     images: [
-      "/creative/htkd1.png",
+      "/creative/htkd/htkd1.png",
       "/placeholder.svg?height=600&width=800&text=Sensor+Setup",
       "/placeholder.svg?height=600&width=800&text=Visual+Feedback",
       "/placeholder.svg?height=600&width=800&text=User+Interaction",
@@ -69,10 +69,10 @@ const creativeProjects: CreativeProject[] = [
     title: "TABLE TOGETHER",
     subtitle: "",
     description:
-      "Developed interactive website allowing UW students to explore the best food around Seattle by small, family-owned restaurants.",
+      "Developed interactive website allowing UW students to explore the best food around Seattle by small, family-owned restaurants. Mobile-first design paradigm and accessibility compliant.",
     images: [
-      "/placeholder.svg?height=600&width=800&text=Homepage",
-      "/placeholder.svg?height=600&width=800&text=3D+Navigation",
+      "/creative/tt/tt1.png",
+      "/creative/tt/tt2.png",
       "/placeholder.svg?height=600&width=800&text=Project+Gallery",
       "/placeholder.svg?height=600&width=800&text=Interactive+Features",
     ],

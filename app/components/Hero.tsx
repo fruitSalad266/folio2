@@ -58,13 +58,16 @@ export default function Hero({
         {/* <p className="text-sm md:text-base text-gray-300 font-light text-center mt-0 leading-normal">Law @ Harvard</p> */}
         
         <div className="flex space-x-6 items-center justify-center my-3">
-          <a href="https://github.com/fruitsalad266" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+          <a href="https://github.com/fruitsalad266" target="_blank" 
+              className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200">
             <Github className="w-5 h-5" />
           </a>
-          <a href="https://linkedin.com/in/mattcng" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+          <a href="https://linkedin.com/in/mattcng" target="_blank" 
+            className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200">
             <Linkedin className="w-5 h-5" />
           </a>
-          <a href="mailto:mattcng9@uw.edu" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">
+          <a href="mailto:mattcng9@uw.edu" target="_blank" rel="noreferrer" 
+          className="text-gray-400 hover:text-white transition-colors hover:scale-105 transform duration-200">
             <Mail className="w-5 h-5" />
           </a>
         </div>

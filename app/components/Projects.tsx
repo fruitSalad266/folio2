@@ -23,7 +23,7 @@ const projects: Project[] = [
     title: "Sentiment Trading Algorithm",
     description: "Built a neural network to classify handwritten digits with 98% accuracy using TensorFlow and Python. Implemented data preprocessing, model training, and evaluation pipelines.",
     github: "https://github.com/example/ml-classifier",
-    tech: ["Python", "TensorFlow", "NumPy"]
+    tech: ["Python", "TensorFlow", "NumPy", "QuantConnect", "BeautifulSoup", "HuggingFace"]
   },
   {
     title: "Reddit Query",
@@ -36,7 +36,7 @@ const projects: Project[] = [
     title: "Snowflake Figma Plugin",
     description: "Figma plugin to generate patterns of snowflakes with Perlin Noise. Can be configured for multiple variants or other objects. Features custom UI.",
     github: "https://github.com/fruitSalad266/snowflake1",
-    tech: ["TypeScript", "HTML", "CSS"]
+    tech: ["TypeScript", "HTML", "CSS", "Figma API"]
   },
   {
     title: "Diabetes Predictor",
