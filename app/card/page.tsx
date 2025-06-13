@@ -1,6 +1,6 @@
 "use client"
 
-import HeroCard from "../components/HeroCard"
+import HeroCard from "./components/HeroCard"
 
 export default function CardPage() {
   return (

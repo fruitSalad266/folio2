@@ -3,7 +3,7 @@
 import { ChevronRight, Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import TiltCard from "./TiltCard"
+import TiltCard from "../../components/TiltCard"
 
 export default function HeroCard() {
   return (
