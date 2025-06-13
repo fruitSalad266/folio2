@@ -17,22 +17,28 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    title: "Systems/Data Analyst",
-    company: "UW Research Compliance",
-    period: "2023 - Present",
-    description: "Finance Division",
+    title: "SDE Intern",
+    company: "Amazon",
+    period: "2025",
+    description: "Incoming @ Bellevue"
+  },
+  {
+    title: "Research Compliance",
+    company: "UW Finance",
+    period: "2023 - 2025",
+    description: "",
     roles: [
         {
-          title: "FDSE",
-          company: "SDA",
-          period: "2023 - 2024",
-          description: "I used Tableau, Power BI and Excel to generate useful visualizations and projections of workload. I also automated various processes with Python and pulled data from a central SQL server."
+          title: "Reconciliations",
+          company: "",
+          period: "2025",
+          description: "Grants, Awards, Subcontracts and Releases"
         },
         {
-          title: "Project Manager",
-          company: "Reconciliations",
-          period: "2025",
-          description: "Foundry"
+          title: "Systems + Data Analyst",
+          company: "SDA",
+          period: "2023 - 2025",
+          description: "I used Tableau, Power BI and Excel to generate visualizations/projections of workload. I also automated various processes with Python and pulled data from a central SQL server to deliver insights."
         }
       ]
   },
@@ -65,6 +71,26 @@ const experiences: ExperienceItem[] = [
         company: "Palantir",
         period: "2024 - 2025",
         description: "Foundry"
+      }
+    ]
+  },
+  {
+    title: "Consulting",
+    company: "Montlake Consulting Group",
+    period: "2023 - 2025",
+    description: "UW's oldest student-run consultancy",
+    roles: [
+      {
+        title: "Project Manager",
+        company: "",
+        period: "2025",
+        description: "Managed consultants on projects for clients"
+      },
+      {
+        title: "Consultant",
+        company: "",
+        period: "2023 - 2024",
+        description: "Projects for clients"
       }
     ]
   }
