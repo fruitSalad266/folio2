@@ -52,8 +52,8 @@ const creativeProjects: CreativeProject[] = [
     instagram: "https://instagram.com/uwhuskytkd",
   },
   {
-    title: "Editorial Design",
-    subtitle: "MAGAZINE LAYOUT",
+    title: "NUTRIDASH",
+    subtitle: "",
     description:
       "Magazine layout and typography for quarterly publication, featuring innovative grid systems and experimental typography. Each issue explores the intersection of design, technology, and culture through thoughtful visual storytelling.",
     images: [
@@ -62,20 +62,22 @@ const creativeProjects: CreativeProject[] = [
       "/placeholder.svg?height=600&width=800&text=Typography",
       "/placeholder.svg?height=600&width=800&text=Layout+Spreads",
     ],
-    logo: "/placeholder.svg?height=600&width=800&text=Logo+Design"
+    logo: "/creative/logos/ndash.png",
+    figma: "https://www.figma.com/proto/wGChXh1BkksK1kKtYVBn0R/NutriDash-Team---N2?node-id=568-1306&p=f&t=GFBUsYC1OIs5MRxA-0&scaling=scale-down&content-scaling=fixed&page-id=568%3A1293&starting-point-node-id=568%3A1306"
   },
   {
-    title: "Digital Experience",
-    subtitle: "INTERACTIVE WEBSITE",
+    title: "TABLE TOGETHER",
+    subtitle: "",
     description:
-      "3D interactive website for architectural firm, showcasing projects through WebGL and immersive storytelling techniques. The experience allows users to explore architectural spaces in an intuitive and engaging way.",
+      "Developed interactive website allowing UW students to explore the best food around Seattle by small, family-owned restaurants.",
     images: [
       "/placeholder.svg?height=600&width=800&text=Homepage",
       "/placeholder.svg?height=600&width=800&text=3D+Navigation",
       "/placeholder.svg?height=600&width=800&text=Project+Gallery",
       "/placeholder.svg?height=600&width=800&text=Interactive+Features",
     ],
-    logo: "/placeholder.svg?height=600&width=800&text=Logo+Design"
+    logo: "/creative/logos/tt3.png",
+    website: "https://info-340---table-together.firebaseapp.com/main-page"
   },
 ]
 
@@ -89,8 +91,7 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
       </div>
 
       {creativeProjects.map((project, projectIndex) => (
-        <div key={projectIndex} className="relative min-h-[400vh]">
-
+        <div key={projectIndex} className="relative min-h-[calc(100vh*4)]">
           {/* Project Container */}
           <div className={`flex w-full max-w-[2000px] mx-auto ${projectIndex % 2 === 0 ? "" : "flex-row-reverse"}`}>
             {/* Sticky Description */}

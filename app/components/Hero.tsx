@@ -55,7 +55,7 @@ export default function Hero({
           at the <a href="https://uw.edu" target="_blank" className="hover:text-white transition-colors">University of Washington</a>
         </p>
         
-        <p className="text-sm md:text-base text-gray-300 font-light text-center mt-0 leading-normal">Law @ Harvard</p>
+        {/* <p className="text-sm md:text-base text-gray-300 font-light text-center mt-0 leading-normal">Law @ Harvard</p> */}
         
         <div className="flex space-x-6 items-center justify-center my-3">
           <a href="https://github.com/fruitsalad266" target="_blank" className="text-gray-400 hover:text-white transition-colors">
@@ -72,7 +72,9 @@ export default function Hero({
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-8 pt-2">
           <button
             onClick={toggleSidebar}
-            className="text-sm text-gray-300 hover:text-white cursor-pointer transition-colors border-b border-gray-600 pb-1"
+            className={`text-sm text-gray-300 hover:text-white cursor-pointer 
+              transition-colors 
+              ${sidebarCollapsed ? 'border-gray-600' : ' border-white'} transition-colors duration-100 border-b pb-1`}
           >
             About + Experience
           </button>

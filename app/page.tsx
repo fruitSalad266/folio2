@@ -59,15 +59,21 @@ export default function Portfolio() {
       <div
         className={`transition-all duration-500 ease-in-out relative z-10 ${
           showCSProjects
-            ? sidebarCollapsed
-              ? "-translate-x-[calc(100vw-4rem)]"
+            ? sidebarCollapsed 
+              ? "-translate-x-[calc(100vw-4rem)]" // Active when showCSProjects=true AND sidebarCollapsed=true
+              // When showCSProjects is true and sidebar is expanded:
+              // Move content left by (viewport width - 20rem) to make room for projects
               : "-translate-x-[calc(100vw-20rem)]"
             : sidebarCollapsed
+              // When sidebar is collapsed: Add 16px left margin
               ? "ml-16"
+              // When sidebar is expanded: Add 80px left margin
               : "ml-80"
         }`}
       >
-        <div className={`min-h-screen transition-colors duration-300 ${!sidebarCollapsed ? 'opacity-30 bg-black/40' : 'opacity-100'}`}>
+        <div className={`min-h-screen transition-colors duration-300 
+              ${!sidebarCollapsed ? 'opacity-30 bg-black/40 hover:opacity-50 transition-opacity duration-250' 
+              : 'opacity-100'}`}>
           <Hero 
             scrollToCreativeWork={scrollToCreativeWork}
             toggleSidebar={toggleSidebar}
