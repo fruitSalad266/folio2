@@ -20,29 +20,29 @@ interface CSProjectsPanelProps {
 
 const projects: Project[] = [
   {
-    title: "Machine Learning Classifier",
+    title: "Sentiment Trading Algorithm",
     description: "Built a neural network to classify handwritten digits with 98% accuracy using TensorFlow and Python. Implemented data preprocessing, model training, and evaluation pipelines.",
     github: "https://github.com/example/ml-classifier",
     tech: ["Python", "TensorFlow", "NumPy"]
   },
   {
     title: "Reddit Query",
-    description: "Query reddit for anything.",
-    link: "https://reddit-query.example.com",
-    github: "https://github.com/example/reddit-query",
-    tech: ["Next.JS", "React", "Requests"]
+    description: "Query reddit for anything. Fullstack application with custom API to parse pushpull. Deployed on Vercel with render backend.",
+    link: "redditquery.vercel.app",
+    github: "https://github.com/fruitsalad266/redditquery",
+    tech: ["Next.JS", "React", "Requests", "Python", "JSX", "PyTest", "FastAPI"]
   },
   {
-    title: "Algorithm Visualizer",
-    description: "Interactive web app that visualizes sorting and pathfinding algorithms with step-by-step animations. Features customizable speed controls and multiple algorithm options.",
-    link: "https://algo-viz.example.com",
-    tech: ["React", "D3.js", "TypeScript"]
+    title: "Snowflake Figma Plugin",
+    description: "Figma plugin to generate patterns of snowflakes with Perlin Noise. Can be configured for multiple variants or other objects. Features custom UI.",
+    github: "https://github.com/fruitSalad266/snowflake1",
+    tech: ["TypeScript", "HTML", "CSS"]
   },
   {
-    title: "Blockchain Voting System",
-    description: "Secure voting platform using Ethereum smart contracts with transparent and immutable vote recording. Includes voter verification and real-time results dashboard.",
-    github: "https://github.com/example/blockchain-voting",
-    tech: ["Solidity", "Web3.js", "Ethereum"]
+    title: "Diabetes Predictor",
+    description: "Researched and implemented diabetes predictor based on biometric factors. Created web-app equivalent for kNN visualization with adjustable parameters",
+    github: "https://github.com/fruitSalad266/diabetes1",
+    tech: ["Python", "Pandas", "scikit-learn", "seaborn", "Plotly Dash", "Jupyter"]
   },
   {
     title: "Data Visualization Dashboard",
@@ -116,10 +116,10 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
               <h3 className="text-xl font-semibold">Tools</h3>
             </div>
             <div>
-              {renderTechTags(['Git', 'Pandas', 'Seaborn', 'plotly', 'scikit-learn'
+              {renderTechTags(['Git', 'Pandas', 'Seaborn', 'Plotly Dash', 'scikit-learn'
                 , 'React', 'FastAPI', 'Next.JS', 'Node.JS', 'PyTorch', 'Jupyter', 
                 'Agile framework', 'QuantConnect', 'MySQL', 'SQLite', 'HuggingFace', 
-                'Vite', 'GNU', 'Tailwind', 'Bootstrap', 'Requests'])}
+                'Vite', 'GNU', 'Tailwind', 'Bootstrap', 'Requests', 'Jupyter'])}
             </div>
           </TiltCard>
         </div>
