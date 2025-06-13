@@ -66,7 +66,7 @@ export default function Portfolio() {
               : "-translate-x-[calc(100vw-20rem)]"
             : sidebarCollapsed
               // When sidebar is collapsed: Add 16px left margin
-              ? "ml-16"
+              ? "ml-2 md:ml-16"
               // When sidebar is expanded: Add 80px left margin
               : "ml-80"
         }`}

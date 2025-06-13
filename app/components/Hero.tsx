@@ -49,7 +49,7 @@ export default function Hero({
           p-6 sm:p-8 md:p-12 rounded-2xl border border-gray-700/50"
       >
 
-        <h1 className="text-5xl md:text-6xl md:my-3 tracking-tight text-center text-white font-bold">MATTHEW NGUYEN</h1>
+        <h1 className="text-5xl md:text-6xl my-1 md:my-3 tracking-tight text-center text-white font-bold">MATTHEW NGUYEN</h1>
         <p className="text-sm md:text-base text-gray-300 font-light text-center leading-normal">
           <a href="https://ischool.uw.edu" target="_blank" className="hover:text-white transition-colors"> Informatics</a> + Business 
           at the <a href="https://uw.edu" target="_blank" className="hover:text-white transition-colors">University of Washington</a>

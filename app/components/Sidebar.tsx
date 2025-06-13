@@ -123,7 +123,7 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
     <div
       ref={ref}
       className={`sidebar fixed left-0 top-0 h-full bg-black-800/90 backdrop-blur-sm border-r border-gray-700/50 overflow-y-auto z-20 transition-all duration-300 
-        ${sidebarCollapsed ? "w-2 md:w-16" : "w-full md:w-1/3"} no-scrollbar`}
+        ${sidebarCollapsed ? "w-0 md:w-16" : "w-full md:w-1/3"} no-scrollbar`}
     >
       {/* Toggle Button */}
       <button
@@ -160,7 +160,7 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
               </p>
               <p className="text-sm leading-relaxed text-gray-200">
                 I&apos;m highly experienced in data for business, design, full stack, database, systems architecture, 
-                ML and AI et cetera. I&apos;m also experienced in DJing. </p>
+                ML and AI et cetera. I&apos;m also experienced in DJing. Current interests include large data decomp and defense applications.</p>
               <p className="text-sm leading-relaxed text-gray-200">This summer I will be working at <a href="https://en.wikipedia.org/wiki/Amazon_(company)" target="_blank" className="text-grey-400 hover:text-white transition-colors">Amazon</a> Bellevue</p>
             </div>
           </div>

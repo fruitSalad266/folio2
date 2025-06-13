@@ -87,7 +87,7 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
     >
       <div className="p-8">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-6xl font-bold md:text-8xl">TECHNICALS</h2>
+          <h2 className="text-4xl md:text-6xl font-bold lg:text-8xl">TECHNICALS</h2>
           <Button
             onClick={() => setShowCSProjects(false)}
             variant="outline"
@@ -97,9 +97,9 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
             <ChevronLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           </Button>
         </div>
-        <p className="text-gray-300 mb-4 leading-relaxed">In the process of learning: ADA, Rust, and OCaml</p>
+        <p className="text-gray-300 mb-4 leading-relaxed text-sm md:text-base">In the process of learning: ADA, Rust, and OCaml</p>
         <div className="flex items-center justify-between my-4">
-          <h2 className="text-4xl font-bold">SKILLS</h2>
+          <h2 className="text-2xl md:text-4xl font-bold">SKILLS</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl">
@@ -125,7 +125,7 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
         </div>
 
         <div className="flex items-center justify-between my-6">
-          <h2 className="text-4xl font-bold">PROJECTS</h2>
+          <h2 className="text-2xl md:text-4xl font-bold">PROJECTS</h2>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl">
