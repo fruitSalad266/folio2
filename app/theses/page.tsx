@@ -49,7 +49,7 @@ export default function ThesesPage() {
             <li className="text-l leading-relaxed max-w-3xl">Don&apos;t have to deal with any clutter</li>
           </ul>
           <p>For the most part, customers, even the general population e.g. college students are still extremely tech literate.
-            They've been on screens since earlier than they can remember and know how to search for information.
+            They&apos;ve been on screens since earlier than they can remember and know how to search for information.
             A lack of online presence in 2025 only serves to hurt, and this is not something most college organizations
             are cognizant of - or at least not willing to adapt to. </p>
           {/* Call to Action */}
