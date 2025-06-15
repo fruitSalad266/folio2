@@ -29,7 +29,7 @@ const creativeProjects: CreativeProject[] = [
       "/creative/ifc/fpr1.png",
       "/creative/ifc/gogreek.png",
       "/creative/ifc/sticker.png",
-      "/creative/ifc/exec.png",
+      //"/creative/ifc/exec.png",
       "/creative/ifc/insta.png",
       "/creative/ifc/gogreek.png"
     ],

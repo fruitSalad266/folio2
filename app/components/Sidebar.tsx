@@ -19,7 +19,7 @@ const experiences: ExperienceItem[] = [
   {
     title: "SDE Intern",
     company: "Amazon",
-    period: "2025",
+    period: "2025-Present",
     description: "Incoming @ Bellevue"
   },
   {
@@ -55,29 +55,9 @@ const experiences: ExperienceItem[] = [
     description: "Changing the world"
   },
   {
-    title: "FDSE",
-    company: "Palantir",
-    period: "2023 - 2025",
-    description: "Worked with clients to custom integrate Foundry products",
-    roles: [
-      {
-        title: "FDSE",
-        company: "Palantir",
-        period: "2023 - 2024",
-        description: "Developed and maintained core platform features"
-      },
-      {
-        title: "Project Manager",
-        company: "Palantir",
-        period: "2024 - 2025",
-        description: "Foundry"
-      }
-    ]
-  },
-  {
     title: "Consulting",
     company: "Montlake Consulting Group",
-    period: "2023 - 2025",
+    period: "2023 - Present",
     description: "UW's oldest student-run consultancy",
     roles: [
       {
