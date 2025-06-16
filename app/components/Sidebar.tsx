@@ -135,11 +135,11 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
             <div className="space-y-4">
               <p className="text-sm leading-relaxed text-gray-200">
                 Hi! I&apos;m a third-year student at the University of Washington, Seattle, studying both Informatics (Software) and Business (Operations Supply Chain). 
-                I also work at <a href="https://www.washington.edu/research/compliance/" className="text-grey-400 hover:text-white transition-colors" target="_blank">UW Research Compliance</a> as 
-                a data analyst and am the current Director of PR for <a href="https://uwifc.com" target="blank" className="text-grey-400 hover:text-white transition-colors">UW IFC.</a>
+                I am the current Director of PR for <a href="https://uwifc.com" target="blank" className="text-grey-400 hover:text-white transition-colors">UW IFC.</a> Formerly 
+                 I was an analyst at <a href="https://www.washington.edu/research/compliance/" className="text-grey-400 hover:text-white transition-colors" target="_blank">UW Research Compliance</a>
               </p>
               <p className="text-sm leading-relaxed text-gray-200">
-                I&apos;m highly experienced in data for business, design, full stack, database, systems architecture, 
+                I&apos;m highly experienced in data, business, design, full stack, DB, systems architecture, 
                 ML and AI et cetera. I&apos;m also experienced in DJing. Current interests include large data decomp and defense applications.</p>
               <p className="text-sm leading-relaxed text-gray-200">This summer I will be working at <a href="https://en.wikipedia.org/wiki/Amazon_(company)" target="_blank" className="text-grey-400 hover:text-white transition-colors">Amazon</a> Bellevue</p>
             </div>

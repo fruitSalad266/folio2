@@ -50,12 +50,6 @@ const projects: Project[] = [
     link: "https://data-viz.example.com",
     github: "https://github.com/example/data-viz",
     tech: ["Vue.js", "Chart.js", "PostgreSQL"]
-  },
-  {
-    title: "Mobile Game Engine",
-    description: "Lightweight 2D game engine for mobile platforms with physics simulation, sprite animation, and audio support. Optimized for performance on low-end devices.",
-    github: "https://github.com/example/game-engine",
-    tech: ["C++", "OpenGL", "Android NDK"]
   }
 ]
 
