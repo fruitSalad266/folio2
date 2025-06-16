@@ -29,9 +29,9 @@ const creativeProjects: CreativeProject[] = [
       "/creative/ifc/fpr1.png",
       "/creative/ifc/gogreek.png",
       "/creative/ifc/sticker.png",
-      //"/creative/ifc/exec.png",
-      "/creative/ifc/insta.png",
-      "/creative/ifc/gogreek.png"
+      "/creative/ifc/exec2.png",
+      "/creative/ifc/figma.png",
+      "/creative/ifc/insta.png"
     ],
     logo: "/creative/logos/ifc.png",
     instagram: "https://instagram.com/uwifc",
@@ -44,9 +44,11 @@ const creativeProjects: CreativeProject[] = [
       "Designed and developed modern rebrand. Grew social media following by 150%. Directed promotional video and drove membership.",
     images: [
       "/creative/htkd/htkd1.png",
-      "/placeholder.svg?height=600&width=800&text=Sensor+Setup",
-      "/placeholder.svg?height=600&width=800&text=Visual+Feedback",
-      "/placeholder.svg?height=600&width=800&text=User+Interaction",
+      "/creative/htkd/insta3.png",
+      "/creative/htkd/color.png",
+      "/creative/htkd/htkd2.png",
+      "/creative/htkd/type.png",
+      "/creative/htkd/insta2.png",
     ],
     logo: "/creative/logos/htkd1.png",
     instagram: "https://instagram.com/uwhuskytkd",
@@ -55,7 +57,7 @@ const creativeProjects: CreativeProject[] = [
     title: "NUTRIDASH",
     subtitle: "",
     description:
-      "Magazine layout and typography for quarterly publication, featuring innovative grid systems and experimental typography. Each issue explores the intersection of design, technology, and culture through thoughtful visual storytelling.",
+      "Mobile delivery app design for older adults and their caretakers to manage and order groceries.",
     images: [
       "/placeholder.svg?height=600&width=800&text=Cover+Design",
       "/placeholder.svg?height=600&width=800&text=Grid+System",
@@ -91,7 +93,7 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
       </div>
 
       {creativeProjects.map((project, projectIndex) => (
-        <div key={projectIndex} className="relative min-h-[calc(100vh*4)]">
+        <div key={projectIndex} className="relative min-h-[calc(90vh*4)]">
           {/* Project Container */}
           <div className={`flex w-full max-w-[2000px] mx-auto ${projectIndex % 2 === 0 ? "" : "flex-row-reverse"}`}>
             {/* Sticky Description */}
