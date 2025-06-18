@@ -46,7 +46,7 @@ const creativeProjects: CreativeProject[] = [
       "/creative/htkd/htkd1.png",
       "/creative/htkd/insta3.png",
       "/creative/htkd/color.png",
-      "/creative/htkd/htkd2.png",
+      "/creative/htkd/htkd3.png",
       "/creative/htkd/type.png",
       "/creative/htkd/insta2.png",
     ],
@@ -59,8 +59,8 @@ const creativeProjects: CreativeProject[] = [
     description:
       "Mobile delivery app design for older adults and their caretakers to manage and order groceries.",
     images: [
-      "/placeholder.svg?height=600&width=800&text=Cover+Design",
-      "/placeholder.svg?height=600&width=800&text=Grid+System",
+      "/creative/nd/nd1.png",
+      "/creative/nd/nd2.png",
       "/placeholder.svg?height=600&width=800&text=Typography",
       "/placeholder.svg?height=600&width=800&text=Layout+Spreads",
     ],
@@ -71,12 +71,11 @@ const creativeProjects: CreativeProject[] = [
     title: "TABLE TOGETHER",
     subtitle: "",
     description:
-      "Developed interactive website allowing UW students to explore the best food around Seattle by small, family-owned restaurants. Mobile-first design paradigm and accessibility compliant.",
+      "Interactive website allowing UW students to explore the food around Seattle by small, family-owned restaurants. Mobile-first design paradigm and accessibility compliant.",
     images: [
       "/creative/tt/tt1.png",
       "/creative/tt/tt2.png",
-      "/placeholder.svg?height=600&width=800&text=Project+Gallery",
-      "/placeholder.svg?height=600&width=800&text=Interactive+Features",
+      "/creative/tt/tt3.png",
     ],
     logo: "/creative/logos/tt3.png",
     website: "https://info-340---table-together.firebaseapp.com/main-page"
@@ -93,7 +92,7 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
       </div>
 
       {creativeProjects.map((project, projectIndex) => (
-        <div key={projectIndex} className="relative min-h-[calc(90vh*4)]">
+        <div key={projectIndex} className="relative min-h-[calc(50vh*4)]">
           {/* Project Container */}
           <div className={`flex w-full max-w-[2000px] mx-auto ${projectIndex % 2 === 0 ? "" : "flex-row-reverse"}`}>
             {/* Sticky Description */}
