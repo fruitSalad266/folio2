@@ -60,9 +60,8 @@ const creativeProjects: CreativeProject[] = [
       "Mobile delivery app design for older adults and their caretakers to manage and order groceries.",
     images: [
       "/creative/nd/nd1.png",
+      "/creative/nd/nd3.png",
       "/creative/nd/nd2.png",
-      "/placeholder.svg?height=600&width=800&text=Typography",
-      "/placeholder.svg?height=600&width=800&text=Layout+Spreads",
     ],
     logo: "/creative/logos/ndash.png",
     figma: "https://www.figma.com/proto/wGChXh1BkksK1kKtYVBn0R/NutriDash-Team---N2?node-id=568-1306&p=f&t=GFBUsYC1OIs5MRxA-0&scaling=scale-down&content-scaling=fixed&page-id=568%3A1293&starting-point-node-id=568%3A1306"
