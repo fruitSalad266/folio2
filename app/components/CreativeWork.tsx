@@ -91,7 +91,7 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
       </div>
 
       {creativeProjects.map((project, projectIndex) => (
-        <div key={projectIndex} className="relative min-h-[calc(50vh*4)]">
+        <div key={projectIndex} className="relative min-h-[calc(35vh*4)]">
           {/* Project Container */}
           <div className={`flex w-full max-w-[2000px] mx-auto ${projectIndex % 2 === 0 ? "" : "flex-row-reverse"}`}>
             {/* Sticky Description */}
@@ -174,6 +174,19 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
           </div>
         </div>
       ))}
+      <div className="w-full flex justify-center">
+        <footer className="mt-6 py-8 w-screen bg-neutral-800/40 backdrop-blur-md p-14 border border-gray-700/50 text-center text-white rounded-none">
+          <h2 className="text-4xl font-bold mb-2">
+            WORK WITH ME:
+          </h2>
+          <a
+            href="mailto:mattcng9@uw.edu"
+            className="text-gray-400 hover:text-white transition-colors font-mono text-lg"
+          >
+            mattcng9 (at) uw dot edu
+          </a>
+        </footer>
+      </div>
     </section>
   )
 } 

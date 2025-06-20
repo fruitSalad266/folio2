@@ -152,6 +152,7 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
             </TiltCard>
           ))}
         </div>
+        
       </div>
     </div>
   )
