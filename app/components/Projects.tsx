@@ -45,11 +45,10 @@ const projects: Project[] = [
     tech: ["Python", "Pandas", "scikit-learn", "seaborn", "Plotly Dash", "Jupyter"]
   },
   {
-    title: "Data Visualization Dashboard",
-    description: "Interactive dashboard for analyzing large datasets with real-time updates and customizable charts. Built with modern web tech and optimized for performance.",
-    link: "https://data-viz.example.com",
+    title: "Pac Man Machine Learning",
+    description: "Designed + implemented ML concepts in the context of a Pac-Man Game, including BFS, DFS, cost function and A* search. Also explorations in minimax, expectimax, reflex and alpha-beta pruning agents; value iteration, policies, Q-learning and Epsilon-greedy approaches; and perceptron classification and feature design.",
     github: "https://github.com/example/data-viz",
-    tech: ["Vue.js", "Chart.js", "PostgreSQL"]
+    tech: ["Python", "Machine Learning", "Neural Networks", "Search Algorithms", "Reinforcement Learning"]
   }
 ]
 

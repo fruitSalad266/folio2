@@ -20,7 +20,7 @@ const experiences: ExperienceItem[] = [
     title: "SDE Intern",
     company: "Amazon",
     period: "2025-Present",
-    description: "Incoming @ Bellevue"
+    description: "Amazon Fulfillment Technologies - Amazon Insights for Manufacturing"
   },
   {
     title: "Research Compliance",
@@ -47,12 +47,6 @@ const experiences: ExperienceItem[] = [
     company: "Stealth",
     period: "2024 - Present",
     description: "50m ARR, 1-4b Seed A. Email for details."
-  },
-  {
-    title: "Junior Partner",
-    company: "8VC",
-    period: "2025 - Present",
-    description: "Changing the world"
   },
   {
     title: "Consulting",
@@ -134,14 +128,14 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
             <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-wider mb-4">About</h2>
             <div className="space-y-4">
               <p className="text-sm leading-relaxed text-gray-200">
-                Hi! I&apos;m a third-year student at the University of Washington, Seattle, studying both Informatics (Software) and Business (Operations Supply Chain). 
+                Hi! I&apos;m an incoming fourth-year student at the University of Washington, Seattle, studying both Informatics (Software) and Business (Operations Supply Chain). 
                 I am the current Director of PR for <a href="https://uwifc.com" target="blank" className="text-grey-400 hover:text-white transition-colors">UW IFC.</a> Formerly 
                  I was an analyst at <a href="https://www.washington.edu/research/compliance/" className="text-grey-400 hover:text-white transition-colors" target="_blank">UW Research Compliance</a>
               </p>
               <p className="text-sm leading-relaxed text-gray-200">
                 I&apos;m highly experienced in data, business, design, full stack, DB, systems architecture, 
                 ML and AI et cetera. I&apos;m also experienced in DJing. Current interests include large data decomp and defense applications.</p>
-              <p className="text-sm leading-relaxed text-gray-200">This summer I will be working at <a href="https://en.wikipedia.org/wiki/Amazon_(company)" target="_blank" className="text-grey-400 hover:text-white transition-colors">Amazon</a> Bellevue</p>
+              <p className="text-sm leading-relaxed text-gray-200">This summer I am at <a href="https://en.wikipedia.org/wiki/Amazon_(company)" target="_blank" className="text-grey-400 hover:text-white transition-colors">Amazon</a> Bellevue on <a href="https://amazon.jobs/content/en/teams/ftr" target="_blank" className="text-grey-400 hover:text-white transition-colors">Fulfillment Technologies & Robotics</a></p>
             </div>
           </div>
 
@@ -164,7 +158,7 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
                 <div className="grid grid-cols-2 gap-2">
                   <div>
                     <h4 className="text-sm font-medium text-gray-300 mb-2">Computer Languages</h4>
-                    {['Python', 'JavaScript', 'TypeScript', 'SQL', 'Java', 'C++', 'Bash', 'HTML', 'SQL', 'R', 'JSX', 'SCSS', 'LaTeX', 'Markdown', 'TSX'].map((lang, index) => (
+                    {['Python', 'JavaScript', 'TypeScript', 'SQL', 'Java', 'C++', 'Bash', 'HTML', 'R', 'JSX'].map((lang, index) => (
                       <span key={index} className="text-xs bg-gray-700/70 px-3 py-1 rounded-full mr-2 mb-2 inline-block">
                         {lang}
                       </span>
@@ -195,10 +189,10 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
                     <h3 className="text-xl font-semibold text-white mb-3">SAT</h3>
                     <p className="text-sm text-gray-200">1590</p>
                   </div>
-                  <div>
+                  {/* <div>
                     <h3 className="text-xl font-semibold text-white mb-3">LSAT</h3>
                     <p className="text-sm text-gray-200">170</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
