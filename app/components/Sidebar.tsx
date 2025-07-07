@@ -20,7 +20,7 @@ const experiences: ExperienceItem[] = [
     title: "SDE Intern",
     company: "Amazon",
     period: "2025-Present",
-    description: "Amazon Fulfillment Technologies - Amazon Insights for Manufacturing"
+    description: "Amazon Fulfillment Technologies - Amazon Insights for Manufacturing. Focus on Agentic AI"
   },
   {
     title: "Research Compliance",
