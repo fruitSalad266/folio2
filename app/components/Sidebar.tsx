@@ -117,7 +117,7 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
             <h2 className="text-4xl font-black uppercase tracking-wider mb-4">Picture</h2>
             <Image 
               src="/pic1.JPG"
-              alt="Picture of Me. I am extremely handsome. Wow!" 
+              alt="Picture of Me. I am extremely handsome (and hireable). Wow!" 
               className="w-80 h-100 object-cover"
               width={640}
               height={800}
@@ -203,7 +203,8 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
                   <li>Data Structures & Algorithms</li>
                   <li>Database Systems</li>
                   <li>Machine Learning</li>
-                  <li>Software Engineering</li>
+                  <li>Project Management</li>
+                  <li>Modeling for Managerial Decision Making</li>
                 </ul>
               </div>
             </div>
