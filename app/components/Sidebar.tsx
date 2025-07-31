@@ -43,12 +43,6 @@ const experiences: ExperienceItem[] = [
       ]
   },
   {
-    title: "Developer",
-    company: "Stealth",
-    period: "2024 - Present",
-    description: "50m ARR, 1-4b Seed A. Email for details."
-  },
-  {
     title: "Consulting",
     company: "Montlake Consulting Group",
     period: "2023 - Present",
@@ -167,7 +161,7 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
                   </div>
                   <div>
                     <h4 className="text-sm font-medium text-gray-300 mb-2">Tools Frameworks etc</h4>
-                    {['Git', 'Pandas', 'Seaborn', 'plotly', 'scikit-learn', 'React', 'FastAPI', 'Next.JS', 'Node.JS'].map((lang, index) => (
+                    {['Git', 'Pandas', 'Seaborn', 'Agile', 'scikit-learn', 'React', 'FastAPI', 'Next.JS', 'Node.JS', 'pydantic'].map((lang, index) => (
                       <span key={index} className="text-xs bg-gray-700/70 px-3 py-1 rounded-full mr-2 mb-2 inline-block">
                         {lang}
                       </span>
@@ -179,7 +173,7 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
               {/* Languages */}
               <div>
                 <h3 className="text-xl font-semibold text-white mb-3">Human Languages</h3>
-                <p className="text-sm text-gray-200">English , Vietnamese, Mandarin Chinese, Spanish</p>
+                <p className="text-sm text-gray-200">English, Vietnamese, Mandarin Chinese, Spanish</p>
               </div>
 
               {/* Test Scores */}
@@ -205,6 +199,7 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
                   <li>Machine Learning</li>
                   <li>Project Management</li>
                   <li>Modeling for Managerial Decision Making</li>
+                  <li>Client Side Development</li>
                 </ul>
               </div>
             </div>

@@ -21,8 +21,7 @@ interface CSProjectsPanelProps {
 const projects: Project[] = [
   {
     title: "Sentiment Trading Algorithm",
-    description: "Built a neural network to classify handwritten digits with 98% accuracy using TensorFlow and Python. Implemented data preprocessing, model training, and evaluation pipelines.",
-    github: "https://github.com/example/ml-classifier",
+    description: "Used BeautifulSoup and HuggingFace to analyze general sentiment of tickers to determine buy/sell strategy. Backtested with 140% returns and front-tested with -4% returns. Built on the QuantConnect platform",
     tech: ["Python", "TensorFlow", "NumPy", "QuantConnect", "BeautifulSoup", "HuggingFace"]
   },
   {
@@ -47,7 +46,6 @@ const projects: Project[] = [
   {
     title: "Pac Man Machine Learning",
     description: "Designed + implemented ML concepts in the context of a Pac-Man Game, including BFS, DFS, cost function and A* search. Also explorations in minimax, expectimax, reflex and alpha-beta pruning agents; value iteration, policies, Q-learning and Epsilon-greedy approaches; and perceptron classification and feature design.",
-    github: "https://github.com/example/data-viz",
     tech: ["Python", "Machine Learning", "Neural Networks", "Search Algorithms", "Reinforcement Learning"]
   }
 ]
@@ -112,7 +110,8 @@ export default function Projects({ showCSProjects, setShowCSProjects }: CSProjec
               {renderTechTags(['Git', 'Pandas', 'Seaborn', 'Plotly Dash', 'scikit-learn'
                 , 'React', 'FastAPI', 'Next.JS', 'Node.JS', 'PyTorch', 'Jupyter', 
                 'Agile framework', 'QuantConnect', 'MySQL', 'SQLite', 'HuggingFace', 
-                'Vite', 'GNU', 'Tailwind', 'Bootstrap', 'Requests', 'Jupyter'])}
+                'Vite', 'GNU', 'Tailwind', 'Bootstrap', 'Requests', 'pydantic',
+                'Figma', 'AWS Lambda'])}
             </div>
           </TiltCard>
         </div>
