@@ -161,7 +161,7 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
                   </div>
                   <div>
                     <h4 className="text-sm font-medium text-gray-300 mb-2">Tools Frameworks etc</h4>
-                    {['Git', 'Pandas', 'Seaborn', 'Agile', 'scikit-learn', 'React', 'FastAPI', 'Next.JS', 'Node.JS', 'pydantic'].map((lang, index) => (
+                    {['Git', 'Pandas', 'Seaborn', 'Agile', 'scikit-learn', 'React', 'FastAPI', 'Next.JS', 'Node.JS', 'pydantic', 'Infrastructure as Code'].map((lang, index) => (
                       <span key={index} className="text-xs bg-gray-700/70 px-3 py-1 rounded-full mr-2 mb-2 inline-block">
                         {lang}
                       </span>
