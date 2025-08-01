@@ -27,7 +27,7 @@ const projects: Project[] = [
   {
     title: "Reddit Query",
     description: "Query reddit for anything. Fullstack application with custom API to parse pushpull. Deployed on Vercel with render backend.",
-    link: "redditquery.vercel.app",
+    link: "https://redditquery.vercel.app",
     github: "https://github.com/fruitsalad266/redditquery",
     tech: ["Next.JS", "React", "Requests", "Python", "JSX", "PyTest", "FastAPI"]
   },
