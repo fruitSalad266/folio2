@@ -32,8 +32,8 @@ const projects: Project[] = [
     tech: ["Next.JS", "React", "Requests", "Python", "JSX", "PyTest", "FastAPI"]
   },
   {
-    title: "2d Physics Engine",
-    description: "2d physics engine with custom graphics engine. Built with C++ and OpenGL.",
+    title: "2D Physics Engine",
+    description: "Physics engine in a 2D space. Support for gravity, collision detection, and more. Built with C++ and OpenGL.",
     tech: ["C++", "OpenGL", "Physics", "Graphics"]
   },
   {
