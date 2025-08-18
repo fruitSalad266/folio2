@@ -32,6 +32,11 @@ const projects: Project[] = [
     tech: ["Next.JS", "React", "Requests", "Python", "JSX", "PyTest", "FastAPI"]
   },
   {
+    title: "2d Physics Engine",
+    description: "2d physics engine with custom graphics engine. Built with C++ and OpenGL.",
+    tech: ["C++", "OpenGL", "Physics", "Graphics"]
+  },
+  {
     title: "Snowflake Figma Plugin",
     description: "Figma plugin to generate patterns of snowflakes with Perlin Noise. Can be configured for multiple variants or other objects. Features custom UI.",
     github: "https://github.com/fruitSalad266/snowflake1",
