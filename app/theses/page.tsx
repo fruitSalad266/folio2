@@ -38,20 +38,13 @@ export default function ThesesPage() {
             <h1 className="text-4xl md:text-6xl font-bold mb-3 tracking-tight">
               THESES
             </h1>
-            <p className="text-l italic text-gray-300 leading-relaxed max-w-3xl">
-              Section is under construction.
-            </p>
           </section>
-          <p className="text-l leading-relaxed max-w-3xl mb-4">I design for functionality. My goal is to make users:</p>
-          <ul className="list-disc list-inside mb-4">
-            <li className="text-l leading-relaxed max-w-3xl">Want to look at my product</li>
-            <li className="text-l leading-relaxed max-w-3xl">Get the information they need quickly</li>
-            <li className="text-l leading-relaxed max-w-3xl">Don&apos;t have to deal with any clutter</li>
-          </ul>
-          <p>For the most part, customers, even the general population e.g. college students are still extremely tech literate.
-            They&apos;ve been on screens since earlier than they can remember and know how to search for information.
-            A lack of online presence in 2025 only serves to hurt, and this is not something most college organizations
-            are cognizant of - or at least not willing to adapt to. </p>
+          <section className="mb-8">
+            <blockquote className="border-l-4 border-gray-700 pl-6 italic text-xl text-gray-200 mb-2">
+              "There is absolutely no bubble in technology"
+            </blockquote>
+            <span className="block text-right text-gray-400 text-base">-Peter Thiel, 2007</span>
+          </section>
           {/* Call to Action */}
           <section className="mt-20 text-center">
             <div className="p-5 rounded-2xl border border-gray-800/50 bg-gray-900/20 backdrop-blur-sm">
