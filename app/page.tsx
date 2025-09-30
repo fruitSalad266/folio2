@@ -18,7 +18,14 @@ export default function Portfolio() {
   }
 
   const toggleSidebar = () => {
-    setSidebarCollapsed(!sidebarCollapsed)
+    if (showCSProjects) {
+      // If Technicals/Projects is open, close it and open sidebar
+      setShowCSProjects(false)
+      setSidebarCollapsed(false)
+    } else {
+      // Otherwise, just toggle the sidebar as normal
+      setSidebarCollapsed(!sidebarCollapsed)
+    }
   }
 
   useEffect(() => {
@@ -74,12 +81,13 @@ export default function Portfolio() {
         <div className={`min-h-screen transition-colors duration-300 
               ${!sidebarCollapsed ? 'opacity-30 bg-black/40 hover:opacity-50 transition-opacity duration-250' 
               : 'opacity-100'}`}>
-          <Hero 
+          <Hero
             scrollToCreativeWork={scrollToCreativeWork}
             toggleSidebar={toggleSidebar}
             setShowCSProjects={setShowCSProjects}
             setSidebarCollapsed={setSidebarCollapsed}
             sidebarCollapsed={sidebarCollapsed}
+            showCSProjects={showCSProjects}
             sidebarRef={sidebarRef}
           />
 

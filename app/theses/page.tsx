@@ -41,7 +41,7 @@ export default function ThesesPage() {
           </section>
           <section className="mb-8">
             <blockquote className="border-l-4 border-gray-700 pl-6 italic text-xl text-gray-200 mb-2">
-              “There is absolutely no bubble in technology”
+              &ldquo;There is absolutely no bubble in technology&rdquo;
             </blockquote>
             <span className="block text-right text-gray-400 text-base">-Peter Thiel, 2007</span>
           </section>

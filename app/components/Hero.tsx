@@ -11,15 +11,17 @@ interface HeroProps {
   setShowCSProjects: (show: boolean) => void
   setSidebarCollapsed: (collapsed: boolean) => void
   sidebarCollapsed: boolean
+  showCSProjects: boolean
   sidebarRef: React.RefObject<HTMLDivElement | null>
 }
 
-export default function Hero({ 
-  scrollToCreativeWork, 
-  toggleSidebar, 
-  setShowCSProjects, 
+export default function Hero({
+  scrollToCreativeWork,
+  toggleSidebar,
+  setShowCSProjects,
   setSidebarCollapsed,
   sidebarCollapsed,
+  showCSProjects,
   sidebarRef
 }: HeroProps) {
 
@@ -87,13 +89,19 @@ export default function Hero({
           >
             Design Work
           </button>
-          <Button 
+          <Button
             onClick={() => {
-              setShowCSProjects(true)
-              setSidebarCollapsed(true)
-            }} 
-            variant="outline" 
-            size="sm" 
+              if (showCSProjects) {
+                // If projects is already open, close it (toggle behavior)
+                setShowCSProjects(false)
+              } else {
+                // If projects is closed, open it and close sidebar
+                setShowCSProjects(true)
+                setSidebarCollapsed(true)
+              }
+            }}
+            variant="outline"
+            size="sm"
             className="group bg-gray-800/50 border-gray-600 text-white hover:bg-gray-700"
           >
             Technicals
