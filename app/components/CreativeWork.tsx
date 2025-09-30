@@ -3,7 +3,7 @@
 import TiltCard from "./TiltCard"
 import Image from "next/image"
 import { Instagram, Globe, Figma } from "lucide-react"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 
 interface CreativeWorkProps {
   creativeWorkRef: React.RefObject<HTMLDivElement | null>
@@ -87,7 +87,6 @@ export default function CreativeWork({ creativeWorkRef }: CreativeWorkProps) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY
       const newScrolledProjects = new Set<number>()
 
       // Check each project's position by finding elements with data-project-index
