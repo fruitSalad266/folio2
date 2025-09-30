@@ -19,8 +19,8 @@ const experiences: ExperienceItem[] = [
   {
     title: "SDE Intern",
     company: "Amazon",
-    period: "2025-Present",
-    description: "Amazon Fulfillment Technologies - Amazon Insights for Manufacturing. Focus on Agentic AI"
+    period: "2025",
+    description: "AFT - Amazon Insights for Manufacturing. Focus on Agentic AI + tooling for exploring massive FC datasets. Built on Native AWS."
   },
   {
     title: "Research Compliance",
@@ -38,7 +38,7 @@ const experiences: ExperienceItem[] = [
           title: "Systems + Data Analyst",
           company: "SDA",
           period: "2023 - 2025",
-          description: "I used Tableau, Power BI and Excel to generate visualizations/projections of workload. I also automated various processes with Python and pulled data from a central SQL server to deliver insights."
+          description: "Generated visualizations/projections of workload, automated various processes with Python and pulled data from a central SQL server to deliver insights."
         }
       ]
   },
@@ -122,14 +122,14 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
             <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-wider mb-4">About</h2>
             <div className="space-y-4">
               <p className="text-sm leading-relaxed text-gray-200">
-                Hi! I&apos;m an incoming fourth-year student at the University of Washington, Seattle, studying both Informatics (Software) and Business (Operations Supply Chain). 
+                Hi! I&apos;m a fourth-year student at the University of Washington, Seattle, studying both Informatics (Software) and Business (Operations Supply Chain). 
                 I am the current Director of PR for <a href="https://uwifc.com" target="blank" className="text-grey-400 hover:text-white transition-colors">UW IFC.</a> Formerly 
-                 I was an analyst at <a href="https://www.washington.edu/research/compliance/" className="text-grey-400 hover:text-white transition-colors" target="_blank">UW Research Compliance</a>
+                 I was an analyst at <a href="https://www.washington.edu/research/compliance/" className="text-grey-400 hover:text-white transition-colors" target="_blank">UW Research Compliance</a> and 
+                 interned at <a href="https://en.wikipedia.org/wiki/Amazon_(company)" target="_blank" className="text-grey-400 hover:text-white transition-colors">Amazon</a> Bellevue.
               </p>
               <p className="text-sm leading-relaxed text-gray-200">
                 I&apos;m highly experienced in data, business, design, full stack, DB, systems architecture, 
                 ML and AI et cetera. I&apos;m also experienced in DJing. Current interests include large data decomp and defense applications.</p>
-              <p className="text-sm leading-relaxed text-gray-200">This summer I am at <a href="https://en.wikipedia.org/wiki/Amazon_(company)" target="_blank" className="text-grey-400 hover:text-white transition-colors">Amazon</a> Bellevue on <a href="https://amazon.jobs/content/en/teams/ftr" target="_blank" className="text-grey-400 hover:text-white transition-colors">Fulfillment Technologies & Robotics</a></p>
             </div>
           </div>
 
