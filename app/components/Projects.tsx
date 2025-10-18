@@ -20,6 +20,14 @@ interface CSProjectsPanelProps {
 
 const projects: Project[] = [
   {
+    title: "Mattculator",
+    description: "Simple high signal calculator with functionality for graphing, variable recall, and more",
+    link: "https://mattculator.vercel.app",
+    github: "https://github.com/fruitsalad266/terminal-calculator",
+    tech: ["Next.JS", "React", "Tailwaind", "MathJS"]
+
+  },
+  {
     title: "Sentiment Trading Algorithm",
     description: "Used BeautifulSoup and HuggingFace to analyze general sentiment of tickers to determine buy/sell strategy. Backtested with 140% returns and front-tested with -4% returns. Built on the QuantConnect platform",
     tech: ["Python", "TensorFlow", "NumPy", "QuantConnect", "BeautifulSoup", "HuggingFace"]
