@@ -28,6 +28,12 @@ const projects: Project[] = [
 
   },
   {
+    title: "2D Physics Engine",
+    description: "Physics engine in a 2D space. Support for gravity, collision detection, and more. Built with C++ and OpenGL.",
+    link: "https://github.com/fruitsalad266/physics",
+    tech: ["C++", "SFML", "Physics", "2D Graphics"]
+  },
+  {
     title: "Sentiment Trading Algorithm",
     description: "Used BeautifulSoup and HuggingFace to analyze general sentiment of tickers to determine buy/sell strategy. Backtested with 140% returns and front-tested with -4% returns. Built on the QuantConnect platform",
     tech: ["Python", "TensorFlow", "NumPy", "QuantConnect", "BeautifulSoup", "HuggingFace"]
@@ -38,11 +44,6 @@ const projects: Project[] = [
     link: "https://redditquery.vercel.app",
     github: "https://github.com/fruitsalad266/redditquery",
     tech: ["Next.JS", "React", "Requests", "Python", "JSX", "PyTest", "FastAPI"]
-  },
-  {
-    title: "2D Physics Engine",
-    description: "Physics engine in a 2D space. Support for gravity, collision detection, and more. Built with C++ and OpenGL.",
-    tech: ["C++", "OpenGL", "Physics", "Graphics"]
   },
   {
     title: "Snowflake Figma Plugin",
