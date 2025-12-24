@@ -29,9 +29,9 @@ const projects: Project[] = [
   },
   {
     title: "2D Physics Engine",
-    description: "Physics engine in a 2D space. Support for gravity, collision detection, and more. Built with C++ and OpenGL.",
-    link: "https://github.com/fruitsalad266/physics",
-    tech: ["C++", "SFML", "Physics", "2D Graphics"]
+    description: "Physics engine in a 2D space. Support for gravity, collision detection, spring simulation, double pendulums, etc. Built with C++ and SFML.",
+    github: "https://github.com/fruitsalad266/physics",
+    tech: ["C++", "SFML", "Physics", "2D Graphics", "Linear Algebra"]
   },
   {
     title: "Sentiment Trading Algorithm",
