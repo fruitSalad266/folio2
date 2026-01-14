@@ -20,18 +20,24 @@ interface CSProjectsPanelProps {
 
 const projects: Project[] = [
   {
+    title: "CHIP8 Emulator",
+    description: "Emulator for the CHIP8 architecture. Supports loading and running CHIP8 programs (.ch8 or .rom). Support for legacy and 'modern' behavior.",
+    github: "https://github.com/fruitsalad266/chip8",
+    tech: ["C++", "SDL", "Hardware Emulation", "Low-Level Design"]
+  },
+  {
+    title: "2D Physics Engine",
+    description: "Physics engine in a 2D space. Support for gravity, collision detection, spring simulation, double pendulums, etc. Built with C++ and SFML.",
+    github: "https://github.com/fruitsalad266/physics",
+    tech: ["C++", "SFML", "Physics", "2D Graphics", "Linear Algebra", "GTest"]
+  },
+  {
     title: "Mattculator",
     description: "Simple high signal calculator with functionality for graphing, variable recall, and more",
     link: "https://mattculator.vercel.app",
     github: "https://github.com/fruitsalad266/terminal-calculator",
     tech: ["Next.JS", "React", "Tailwaind", "MathJS"]
 
-  },
-  {
-    title: "2D Physics Engine",
-    description: "Physics engine in a 2D space. Support for gravity, collision detection, spring simulation, double pendulums, etc. Built with C++ and SFML.",
-    github: "https://github.com/fruitsalad266/physics",
-    tech: ["C++", "SFML", "Physics", "2D Graphics", "Linear Algebra"]
   },
   {
     title: "Sentiment Trading Algorithm",
