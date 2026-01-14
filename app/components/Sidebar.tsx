@@ -38,7 +38,7 @@ const experiences: ExperienceItem[] = [
           title: "Systems + Data Analyst",
           company: "SDA",
           period: "2023 - 2025",
-          description: "Generated visualizations/projections of workload, automated various processes with Python and pulled data from a central SQL server to deliver insights."
+          description: "Automations, visualizations, projections and data analysis."
         }
       ]
   },
@@ -122,14 +122,13 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
             <h2 className="text-4xl md:text-6xl font-bold uppercase tracking-wider mb-4">About</h2>
             <div className="space-y-4">
               <p className="text-sm leading-relaxed text-gray-200">
-                Hi! I&apos;m a fourth-year student at the University of Washington, Seattle, studying both Informatics (Software) and Business (Operations Supply Chain). 
-                I am the current Director of PR for <a href="https://uwifc.com" target="blank" className="text-grey-400 hover:text-white transition-colors">UW IFC.</a> Formerly 
-                 I was an analyst at <a href="https://www.washington.edu/research/compliance/" className="text-grey-400 hover:text-white transition-colors" target="_blank">UW Research Compliance</a> and 
+                Hi! I&apos;m a fourth-year at the University of Washington, Seattle, studying both Informatics (Software) and Business (Operations Supply Chain). 
+                I was Director of PR for <a href="https://uwifc.com" target="blank" className="text-grey-400 hover:text-white transition-colors">UW IFC</a> 
+                 , an analyst at <a href="https://www.washington.edu/research/compliance/" className="text-grey-400 hover:text-white transition-colors" target="_blank">UW Research Compliance</a> and 
                  interned at <a href="https://en.wikipedia.org/wiki/Amazon_(company)" target="_blank" className="text-grey-400 hover:text-white transition-colors">Amazon</a> Bellevue.
               </p>
               <p className="text-sm leading-relaxed text-gray-200">
-                I&apos;m highly experienced in data, business, design, full stack, DB, systems architecture, 
-                ML and AI et cetera. I&apos;m also experienced in DJing. Current interests include large data decomp and defense applications.</p>
+                I&apos;m highly experienced in software. I&apos;m also experienced in DJing. Current interests include large data decomp, defense applications, and low-level design.</p>
             </div>
           </div>
 
@@ -200,6 +199,7 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
                   <li>Project Management</li>
                   <li>Modeling for Managerial Decision Making</li>
                   <li>Client Side Development</li>
+                  <li>Self-taught: OS, Low-level design, multithreading etc</li>
                 </ul>
               </div>
             </div>
@@ -216,7 +216,7 @@ const Sidebar = forwardRef<HTMLDivElement, SidebarProps>(({ sidebarCollapsed, to
             
             <p className="text-sm leading-relaxed text-gray-200">Github Repo: <a href="https://github.com/fruitsalad266/folio2" className="text-grey-400 hover:text-white transition-colors">Link</a></p>
             <p className="text-sm leading-relaxed text-gray-200">Powered by <a href="https://nextjs.org" className="text-grey-400 hover:text-white transition-colors">Next.js</a></p>
-            <p className="text-sm leading-relaxed text-gray-200">&copy; 2025 Matthew Nguyen</p>          
+            <p className="text-sm leading-relaxed text-gray-200">&copy; 2026 Matthew Nguyen</p>          
           </div>
         </div>
       </div>
